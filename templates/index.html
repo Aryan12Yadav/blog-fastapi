@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }} - My Blog</title> 
+</head>
+<body>
+
+    <header>
+        <h1>Simple Blog Title</h1>
+        <p>A place for technical thoughts and updates.</p>
+    </header>
+
+    <main>
+        
+        <article>
+            <h2>The Simplicity of Plain HTML</h2>
+            
+            <p>
+                Posted on <span class="meta-date">October 15, 2025</span> by Admin
+            </p>
+            
+            <section>
+                <p>
+                    This is the main content of the first blog post. It demonstrates the basic
+                    structure of an **article** element inside the **main** section. 
+                    Without any CSS, the browser renders this using default fonts and spacing.
+                </p>
+                <p>
+                    This clean structure makes it easy to integrate with a framework like 
+                    FastAPI and apply styling using an external CSS file later on.
+                </p>
+            </section>
+        </article>
+
+        <article>
+            <h2>FastAPI and the / Route</h2>
+            <p>Posted on October 14, 2025 by Guest</p>
+            
+            <section>
+                <p>
+                    We use the <code style="background-color: lightgray;">@app.get("/")</code> 
+                    decorator to define the API endpoint that serves this page. 
+                    It is a clean way to route traffic to the main template.
+                </p>
+            </section>
+        </article>
+
+    </main>
+
+    <footer>
+        <hr>
+        <p>&copy; 2025 Simple Blog. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
